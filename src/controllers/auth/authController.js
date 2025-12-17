@@ -18,3 +18,6 @@ if (!match) return res.status(400).json({ message: 'Wrong password' });
 const token = signToken({ id: user.id });
 res.json({ token });
 };
+3
+exports.logout = async (req, res) => {
+res.
